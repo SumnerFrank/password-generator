@@ -1,5 +1,15 @@
 // Assignment code here
 
+function generatePassword() {
+//prompt user for pw length and character types 
+//validate selections 
+//generate password 
+//display password 
+  
+
+}
+
+
 var randomNumber = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 var randomSymbol = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"]
 var randomLetter = ["a", "b", "c", "d", "e", "f", "g", "h", 
@@ -8,6 +18,8 @@ var randomLetter = ["a", "b", "c", "d", "e", "f", "g", "h",
 
 var minCharacterLength = 8;
 var maxCharacterLength = 128;
+
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
