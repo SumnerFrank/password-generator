@@ -1,4 +1,4 @@
-// Assignment code here
+// arrays for potential password charactets
 
 var randomNumber = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 var randomSymbol = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"]
@@ -9,6 +9,7 @@ var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H",
 "I", "J", "K","L", "M", "N", "O", "P", "Q", "R", "S", "T", 
 "U", "V", "W", "X", "Y", "Z"]
 
+// criteria for length and alert choice selections
 var characterLength = 8;
 var selectedChoices = [];
 
@@ -20,6 +21,8 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
     var correctPrompts = getPrompts();
 
+
+//functions for unique pasword creation based on selections
 if(correctPrompts) {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -38,6 +41,8 @@ function generatePassword() {
   return password;
 }
 
+
+//Prompts, wpending how they are selected, change the outcome of the generated password
 function getPrompts() {
   characterLength = prompt("How many characters do you want your password to be? (8 - 128 characters)")
   if(isNaN(characterLength) || characterLength < 8 || characterLength > 128){
