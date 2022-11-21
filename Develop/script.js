@@ -18,15 +18,24 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
+    var correctPrompts = getPrompts();
+
+if(correctPrompts) {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+}
 
 }
 
 function generatePassword() {
-  getPrompts
+  var password = "";
+  for(var i=0; i < characterLength; i++) {
+    var randomLetter = Math.floor(Math.random() * selectedChoices.length)
+    password = password + selectedChoices[randomLetter];
+  }
+  return password;
 }
 
 function getPrompts() {
