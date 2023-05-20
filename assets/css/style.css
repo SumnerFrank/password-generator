@@ -29,7 +29,7 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 43%, 82%);
+  color: hsl(207, 29%, 94%);
   text-shadow: black 1px 1px;
 }
 
@@ -38,6 +38,18 @@ header {
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(207, 29%, 94%);
+  text-shadow: black 1px 1px;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.contact {
+  border-radius: 5px;
+  border-width: 1px;
   color: hsl(207, 29%, 94%);
   text-shadow: black 1px 1px;
   font-size: 18px;
@@ -139,4 +151,32 @@ button[disabled] {
   .btn {
     font-size: 0.8rem;
   }
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: #000000;
+  color: #ffffff;
 }
